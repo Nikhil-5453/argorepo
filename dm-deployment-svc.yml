@@ -29,7 +29,7 @@ metadata:
   name: dm-svc
 spec:
   type: NodePort
-  selectors:
+  selector:
     app: dm
   ports:
     - port: 80
