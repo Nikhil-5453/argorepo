@@ -8,7 +8,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: zomato
+      app: zomato1
   template:
     metadata:
       name: zomato-template
