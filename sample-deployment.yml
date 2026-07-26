@@ -3,9 +3,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zomato
+  name: zomato1
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: zomato
@@ -13,10 +13,12 @@ spec:
     metadata:
       name: zomato-template
       labels:
-        app: zomato
+        app: zomato1
     spec:
       containers:
         - name: cont1
-          image: nikhil74/zomatoapp:v2
+          #image: nikhil74/zomatoapp:v2
+          image: shaikmustafa/dm
           ports:
-            - containerPort: 3000
+            - containerPort: 80
+            #- containerPort: 3000
