@@ -11,7 +11,7 @@ spec:
       app: dm
   template:
     metadata:
-      name: zomato-template
+      name: dm-template
       labels:
         app: dm
     spec:
@@ -33,4 +33,4 @@ spec:
     app: dm
   ports:
     - port: 80
-      tsrgetPort: 80
+      targetPort: 80
